@@ -1,0 +1,33 @@
+---
+- name: Paigaldab veebiserveri AlmaServerisse
+hosts: webservers
+become: true
+tasks:
+- name: Installi Apache
+dnf:
+name: httpd
+state: present
+update_cache: yes
+
+- name: Httpd teenus sisse
+systemd:
+name: httpd
+state: started
+enabled: yes
+
+- name: Paigaldab andmebaasiserveri debianServerisse
+hosts: dbservers
+become: true
+tasks:
+- name: Installi MariaDB server
+apt:
+name: mariadb-server
+state: present
+update_cache: yes
+
+- name: Start mariadb
+systemd:
+
+name: mariadb
+state: started
+enabled: true
