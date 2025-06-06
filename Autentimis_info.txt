@@ -1,0 +1,15 @@
+WinServer - Passw0rd
+WinCoreServer - Passw0rd
+WinKlient - kasutajanimi - Haldur - parool - Passw0rd
+DebianServer - kasutaja - Passw0rd
+UbuntuServer - Passw0rd
+AlmaServer - Passw0rd
+UbuntuKlient - Passw0rd
+
+WinCore SafeModeAdministratorPassword - ParoolTurvaline123!
+DC2 lisamisel domeeni controlleri kataloogi - ParoolTurvalineDC2
+Failoveri Shared Secret - DHCPfailparool25!
+
+AD kasutajate default parool Parool12345!
+
+Graylog 10.0.95.12:9000 - moks - Passw0rd!
